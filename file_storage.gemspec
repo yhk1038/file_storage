@@ -11,18 +11,19 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'ActiveAddition/ FileStorage similar ' \
                        'with ActiveStorage but more flexible.'
-  spec.description   = ''
+  spec.description   = 'FileStorage which is not only very similar with' \
+                       'ActiveStorage but also more flexible' \
+                       'with your own config.'
   spec.homepage      = 'https://github.com/yhk1038/file_storage'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "https://github.com/yhk1038/file_storage"
-
+    spec.metadata['allowed_push_host'] = spec.homepage
     spec.metadata['homepage_uri'] = spec.homepage
-    spec.metadata['source_code_uri'] = "https://github.com/yhk1038/file_storage"
-    spec.metadata['changelog_uri'] = "https://github.com/yhk1038/file_storage"
+    spec.metadata['source_code_uri'] = spec.homepage
+    spec.metadata['changelog_uri'] = "#{spec.homepage}/blob/master/CODE_OF_CONDUCT.md"
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
           'public gem pushes.'
@@ -37,7 +38,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'minitest', '~> 5.0'
 end
