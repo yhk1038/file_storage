@@ -6,6 +6,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+/test/dummy_app/tmp/
 
 .idea
 .idea/*
