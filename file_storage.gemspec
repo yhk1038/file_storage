@@ -4,15 +4,15 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'file_storage/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'file_storage'
+  spec.name          = 'rails-file_storage'
   spec.version       = FileStorage::VERSION
   spec.authors       = ['Fred Kim']
   spec.email         = ['yhkks1038@gmail.com']
 
-  spec.summary       = 'ActiveAddition/ FileStorage similar ' \
+  spec.summary       = 'Rails/ FileStorage similar ' \
                        'with ActiveStorage but more flexible.'
-  spec.description   = 'FileStorage which is not only very similar with' \
-                       'ActiveStorage but also more flexible' \
+  spec.description   = 'FileStorage which is not only very similar with ' \
+                       'ActiveStorage but also more flexible ' \
                        'with your own config.'
   spec.homepage      = 'https://github.com/yhk1038/file_storage'
   spec.license       = 'MIT'

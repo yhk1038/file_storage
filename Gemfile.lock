@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    file_storage (0.1.16)
+    rails-file_storage (0.2.9)
 
 GEM
   remote: https://rubygems.org/
@@ -122,9 +122,9 @@ DEPENDENCIES
   activerecord
   activesupport
   bundler
-  file_storage!
   minitest (~> 5.0)
   rails
+  rails-file_storage!
   rake (~> 10.0)
 
 BUNDLED WITH
